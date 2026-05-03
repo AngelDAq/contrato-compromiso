@@ -1,0 +1,234 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, 'Segoe UI', 'Roboto', sans-serif;
+    background: #1e1e2f;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: 650px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.card {
+    background: #f4f2f0;
+    border-radius: 40px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    box-shadow: 0 20px 35px rgba(0,0,0,0.3);
+    border: 1px solid #ddd;
+    transition: all 0.2s ease;
+}
+
+.emoji-header {
+    font-size: 2.5rem;
+}
+
+.title {
+    font-size: 1.8rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    color: #222;
+    margin-top: 10px;
+}
+
+.subtitle {
+    color: #555;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+.icon {
+    font-size: 4rem;
+    margin: 15px 0;
+}
+
+.proposal-btn {
+    background: #111;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 14px 25px;
+    border-radius: 60px;
+    width: 100%;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-top: 10px;
+}
+
+.proposal-btn:hover {
+    background: #333;
+    transform: scale(0.97);
+}
+
+.message {
+    margin-top: 30px;
+}
+
+.hidden {
+    display: none;
+}
+
+.clausulas {
+    background: white;
+    border-radius: 30px;
+    padding: 1.5rem;
+    text-align: left;
+    border: 1px solid #ccc;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.05);
+}
+
+.clausulas h2 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #1e1e2f;
+}
+
+.clausulas ul {
+    list-style: none;
+    padding: 0;
+}
+
+.clausulas li {
+    background: #f9f9f9;
+    margin: 12px 0;
+    padding: 10px 12px;
+    border-radius: 20px;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    border-left: 5px solid #ff9800;
+}
+
+.legal-note {
+    background: #ffe6e6;
+    padding: 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    text-align: center;
+    margin: 20px 0;
+    color: #a00;
+}
+
+.checkbox-area {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.checkbox-label input {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.final-accept-btn {
+    background: #ff9800;
+    border: none;
+    width: 100%;
+    padding: 14px;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.2s;
+    color: #1e1e1e;
+}
+
+.final-accept-btn:disabled {
+    background: #bbb;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.final-accept-btn:enabled:hover {
+    background: #e68900;
+    transform: scale(0.98);
+}
+
+.final-message {
+    margin-top: 25px;
+    background: #111;
+    color: white;
+    padding: 20px;
+    border-radius: 30px;
+    text-align: center;
+    animation: fadeScale 0.3s ease;
+}
+
+.final-message h2 {
+    font-size: 1.6rem;
+    margin: 10px 0;
+}
+
+.fireworks {
+    font-size: 2rem;
+}
+
+@keyframes fadeScale {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* responsive */
+@media (max-width: 550px) {
+    .card {
+        padding: 1.5rem 1rem;
+    }
+
+    .title {
+        font-size: 1.4rem;
+    }
+
+    .clausulas h2 {
+        font-size: 1.2rem;
+    }
+
+    .clausulas li {
+        font-size: 0.85rem;
+    }
+
+    .final-message h2 {
+        font-size: 1.3rem;
+    }
+
+    .proposal-btn {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 450px) {
+    body {
+        padding: 12px;
+    }
+
+    .clausulas li {
+        font-size: 0.8rem;
+    }
+}
